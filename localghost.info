@@ -1,0 +1,5 @@
+name = LocalGhost
+description = Publish static sites from Drupal
+core = 7.x
+package = Publishing
+configure = admin/config/localghost/configure
