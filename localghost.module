@@ -11,14 +11,14 @@ function localghost_menu() {
 }
 
 function localghost_configure() {
-	return 'not complete';
+	//Configuration for localghost
+	return "Nothing here. Move along.";
 }
 
 function localghost_page_alter(&$page) {
-	// $page_array = $page;
-	// $path = request_path();
-	// if(empty($path)) $path = 'index';
-	// $html = drupal_render($page_array);
-	// $html_file = file_save_data($html, 'public://localghost/' . $path . '.html', FILE_EXISTS_REPLACE);
-	dsm($page);
+	$page_array = $page;
+	$path = request_path();
+	if(empty($path)) $path = 'index';
+	$html = drupal_render($page_array);
+	$html_file = file_save_data($html, 'public://localghost/' . $path . '.html', FILE_EXISTS_REPLACE);
 }
